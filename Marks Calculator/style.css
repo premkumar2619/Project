@@ -1,0 +1,171 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    height: 100vh;
+    width: 100wh;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    background-image: url(image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aqua;
+}
+
+.layout {
+    max-width: 50%;
+    height: 80%;
+    padding-top: 50px;
+
+}
+
+.background {
+    width: 80%;
+    height: 60%;
+    margin: auto;
+    background-color: darkslategrey;
+    border-radius: 30px;
+    border: 2px solid rgb(101, 101, 234);
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(79, 110, 160);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.calculate_form {
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.calculate_form button {
+    grid-column: 1/3;
+    width: 200px;
+    margin: auto;
+}
+
+.calculate_form input {
+    width: 90%;
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+input::placeholder {
+    color: white;
+    font-size: 20px;
+}
+
+.text {
+    width: 80%;
+    height: 50%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.text h2 {
+    color: dimgrey;
+    font-size: 40px;
+}
+
+.text h1 {
+    color: darkslategrey;
+    font-size: 60px;
+}
+
+.newp_font {
+    color: white;
+    font-weight: bold;
+    grid-column: 1/3;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+@media (max-width: 1400px) {
+    .layout {
+        width: 100%;
+        
+    }
+
+    .background {
+        width: 70%;
+        height: 350px;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100wh;
+        background-image: url(image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    button{
+        width: 150px;
+    }
+
+}
+
+@media (max-width: 786px) {
+    .layout {
+        width: 100%;
+    }
+
+    .background {
+        width: 300px;
+        height: 500px;
+        margin: auto;
+        /* height: 54rem; */
+    }
+    .calculate_form{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .calculate_form {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .calculate_form button {
+        grid-column: 1/2;
+    }
+
+    .text h1 {
+        font-size: 40px;
+    }
+
+    .text h2 {
+        font-size: 30px;
+    }
+
+    input {
+        max-width: 100%;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100wh;
+        background-image: url(image.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    button{
+        font-size: 15px;
+        width: 150px;
+    }
+
+}
